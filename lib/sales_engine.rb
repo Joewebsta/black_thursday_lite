@@ -2,10 +2,10 @@ require './lib/merchant_collection'
 require './lib/item_collection'
 
 class SalesEngine
-  attr_reader :merchant_collection, :item_collection
+  attr_reader :merchants, :item_collection
 
   def initialize(collections)
-    @merchant_collection = collections[:merchants]
+    @merchants = collections[:merchants]
     @item_collection = collections[:items]
   end
 
